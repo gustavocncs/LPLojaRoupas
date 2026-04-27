@@ -2,10 +2,9 @@
 
 Landing page de loja de roupas casual com tema dark (preto e dourado), desenvolvida com HTML, CSS e JavaScript puro como projeto de portfólio.
 
-![Preview]
-![HTML5]
-![CSS3]
-![JavaScript]
+HTML5
+CSS3
+JavaScript
 
 ---
 
