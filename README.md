@@ -34,10 +34,10 @@ Landing page de loja de roupas casual com tema dark (preto e dourado), desenvolv
 
 ```
 loja-roupas/
-├── index.html    # Estrutura da página
-├── style.css     # Todos os estilos
-├── script.js     # Interações JavaScript
-└── img/          # Coloque suas imagens aqui
+├── index.html    
+├── style.css     
+├── script.js     
+└── img/         
 ```
 
 ## O que aprendi com esse projeto
