@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LP-LojaRoupas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- NAV -->
+    <nav>
+      <div class="nav-logo">BásicoLR</div>
+      <div class="nav-links">
+        <a href="#">Novidades</a>
+        <a href="#">Camisetas</a>
+        <a href="#">Calças</a>
+        <a href="#">Acessórios</a>
+        <a href="#">Sale</a>
+      </div>
+      <div class="nav-actions">
+        <button>Entrar</button>
+        <button class="icon-btn">&#128269;</button>
+        <button class="cart-btn" id="cartBtn">Sacola (0)</button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <div class="hero-tag">Nova Coleção — Outono 2025</div>
+        <h1 class="hero-title">O básico<br>que te faz<br><em>diferente.</em></h1>
+        <p class="hero-desc">Peças essenciais com acabamento premium. Simplicidade que fala por você — do café da manhã à última hora.</p>
+        <div class="hero-btns">
+          <button class="btn-primary" onclick="scrollTo('#produtos')">Ver Coleção</button>
+          <button class="btn-ghost">Lookbook</button>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-img-placeholder">
+          <!-- Substitua essa div por uma tag <img> com sua foto de produto -->
+          <div class="placeholder-icon">👔</div>
+          <span class="placeholder-label">Adicione sua imagem aqui</span>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-num">30%</span>
+          <span class="badge-label">Off hoje</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- STRIP -->
+    <div class="strip">
+      <div class="strip-item"><div class="strip-dot"></div>Frete grátis acima de R$ 299</div>
+      <div class="strip-item"><div class="strip-dot"></div>Troca em até 30 dias</div>
+      <div class="strip-item"><div class="strip-dot"></div>Algodão 100% premium</div>
+      <div class="strip-item"><div class="strip-dot"></div>Entrega em 2 dias úteis</div>
+    </div>
+
+    <!-- PRODUTOS -->
+    <section class="products" id="produtos">
+      <div class="section-header">
+        <h2 class="section-title">Mais <span>vendidos</span></h2>
+        <button class="see-all">Ver todos</button>
+      </div>
+      <div class="products-grid">
+
+        <div class="product-card">
+          <div class="product-img">
+            <!-- <img src="img/camiseta.jpg" alt="Camiseta Oversized Essential"> -->
+            <div class="product-icon">👕</div>
+            <div class="product-tag">Novo</div>
+            <button class="product-wish" aria-label="Favoritar">♡</button>
+          </div>
+          <div class="product-name">Camiseta Oversized Essential</div>
+          <div class="product-sub">Preto / Off-white / Caqui</div>
+          <div class="product-price">R$ 89,90</div>
+          <button class="btn-add" onclick="addToCart(this)">Adicionar à sacola</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <div class="product-icon">👖</div>
+            <div class="product-tag sale">-30%</div>
+            <button class="product-wish" aria-label="Favoritar">♡</button>
+          </div>
+          <div class="product-name">Calça Cargo Wide</div>
+          <div class="product-sub">Preto / Bege / Verde</div>
+          <div class="product-price"><s>R$ 199,90</s> R$ 139,90</div>
+          <button class="btn-add" onclick="addToCart(this)">Adicionar à sacola</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <div class="product-icon">🧥</div>
+            <button class="product-wish" aria-label="Favoritar">♡</button>
+          </div>
+          <div class="product-name">Moletom Básico Pesado</div>
+          <div class="product-sub">Grafite / Marrom / Preto</div>
+          <div class="product-price">R$ 159,90</div>
+          <button class="btn-add" onclick="addToCart(this)">Adicionar à sacola</button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <div class="product-icon">🧣</div>
+            <div class="product-tag sale">-20%</div>
+            <button class="product-wish" aria-label="Favoritar">♡</button>
+          </div>
+          <div class="product-name">Kit 3 Meias Cano Alto</div>
+          <div class="product-sub">Branco / Preto / Cinza</div>
+          <div class="product-price"><s>R$ 59,90</s> R$ 47,90</div>
+          <button class="btn-add" onclick="addToCart(this)">Adicionar à sacola</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BANNER DESTAQUE -->
+    <div class="banner">
+      <div class="banner-text">
+        <div class="banner-tag">Coleção Cápsula</div>
+        <h2 class="banner-title">Tudo que você<br>precisa em <em>uma peça.</em></h2>
+        <p class="banner-desc">A jaqueta corta-vento Essential foi feita para durar. Tecido técnico, caimento perfeito, zero frescura.</p>
+        <button class="btn-primary">Comprar agora</button>
+      </div>
+      <div class="banner-imgs">
+        <!-- <img src="img/jaqueta.jpg" alt="Jaqueta Essential"> -->
+        <div class="banner-img-ph">🧥</div>
+        <div class="banner-img-ph">👟</div>
+      </div>
+    </div>
+
+    <!-- CATEGORIAS -->
+    <section class="categories">
+      <div class="section-header">
+        <h2 class="section-title">Por <span>categoria</span></h2>
+      </div>
+      <div class="cats-grid">
+        <div class="cat-card">
+          <div class="cat-num">01</div>
+          <div class="cat-title">Camisetas</div>
+          <div class="cat-sub">32 produtos</div>
+          <div class="cat-arrow">→</div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-num">02</div>
+          <div class="cat-title">Calças &amp; Bermudas</div>
+          <div class="cat-sub">18 produtos</div>
+          <div class="cat-arrow">→</div>
+        </div>
+        <div class="cat-card">
+          <div class="cat-num">03</div>
+          <div class="cat-title">Moletons &amp; Jackets</div>
+          <div class="cat-sub">24 produtos</div>
+          <div class="cat-arrow">→</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="testimonials">
+      <div class="section-header">
+        <h2 class="section-title">O que dizem os <span>clientes</span></h2>
+      </div>
+      <div class="test-grid">
+        <div class="test-card">
+          <div class="test-stars">★★★★★</div>
+          <p class="test-text">"A camiseta oversized é incrível. Uso ela praticamente todo dia — lavou e voltou perfeita."</p>
+          <div class="test-author">— Lucas M., São Paulo</div>
+        </div>
+        <div class="test-card">
+          <div class="test-stars">★★★★★</div>
+          <p class="test-text">"Finalmente uma marca que entende o que é básico de qualidade. O moletom é a peça mais confortável que tenho."</p>
+          <div class="test-author">— Fernanda R., Curitiba</div>
+        </div>
+        <div class="test-card">
+          <div class="test-stars">★★★★★</div>
+          <p class="test-text">"Entrega rápida, produto ainda melhor do que nas fotos. Já fiz o terceiro pedido esse mês."</p>
+          <div class="test-author">— Rodrigo T., Rio de Janeiro</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <div class="newsletter">
+      <div class="nl-title">Receba as <em>novidades</em><br>em primeira mão.</div>
+      <form class="nl-form" onsubmit="handleNewsletter(event)">
+        <input class="nl-input" type="email" placeholder="Seu melhor e-mail" required />
+        <button class="nl-btn" type="submit">Assinar</button>
+      </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">Básico&amp;Co</div>
+          <p class="footer-desc">Roupas casuais com acabamento premium. Feitas para durar e combinar com qualquer momento do seu dia.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Loja</h4>
+          <a href="#">Novidades</a>
+          <a href="#">Mais vendidos</a>
+          <a href="#">Sale</a>
+          <a href="#">Lookbook</a>
+        </div>
+        <div class="footer-col">
+          <h4>Ajuda</h4>
+          <a href="#">Minha conta</a>
+          <a href="#">Rastrear pedido</a>
+          <a href="#">Trocas e devoluções</a>
+          <a href="#">Contato</a>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <a href="#">Sobre nós</a>
+          <a href="#">Sustentabilidade</a>
+          <a href="#">Trabalhe conosco</a>
+          <a href="#">Imprensa</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2025 Básico&amp;Co. Todos os direitos reservados.</div>
+        <div class="footer-social">
+          <a href="#">Instagram</a>
+          <a href="#">TikTok</a>
+          <a href="#">Pinterest</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
